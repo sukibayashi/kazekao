@@ -18,6 +18,11 @@
   src: url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.woff") format("woff"), url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.ttf") format("truetype"), url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.eot") format("embedded-opentype");
 }
 
+@font-face {
+  font-family: "GenEiKoburiMin6-R";
+  src: url("../fonts/GenEiKoburiMin_v6.1/fontSize/GenEiKoburiMin6-R.woff") format("woff"), url("../fonts/GenEiKoburiMin_v6.1/fontSize/GenEiKoburiMin6-R.ttf") format("truetype"), url("../fonts/GenEiKoburiMin_v6.1/fontSize/GenEiKoburiMin6-R.eot") format("embedded-opentype");
+}
+
 /* defaults for transition-opt */
 /* defaults for line-opt */
 /* defaults for transitions */
@@ -4858,5 +4863,68 @@ html {
 .mainRight .blog-slider {
   margin-top: 10px;
   padding-left: 65px;
+}
+
+.mainRight .qna .qnaTitle {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-family: "Sawarabi Mincho", sans-serif;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.mainRight .qna .question {
+  margin-left: 186px;
+  max-width: 680px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "GenEiKoburiMin6-R";
+  font-size: 0.9rem;
+}
+
+.mainRight .qna .question .questionTitle {
+  max-width: 20%;
+  font-weight: bold;
+}
+
+.mainRight .qna .question .questionText {
+  padding-right: 0px;
+}
+
+.mainRight .qna .address {
+  margin-left: 186px;
+  max-width: 680px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "GenEiKoburiMin6-R";
+  font-size: 0.9rem;
+}
+
+.mainRight .qna .address .addressTitle {
+  max-width: 20%;
+  font-weight: bold;
+}
+
+.mainRight .qna .address .addressText {
+  padding-right: 0px;
+}
+
+.mainRight .qna .goto {
+  margin-left: 186px;
+  max-width: 680px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "GenEiKoburiMin6-R";
+  font-size: 0.9rem;
+}
+
+.mainRight .qna .goto .gotoTitle {
+  max-width: 20%;
+  font-weight: bold;
+}
+
+.mainRight .qna .goto .gotoText {
+  padding-right: 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -26,6 +26,13 @@
     url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.eot") format("embedded-opentype");
 }
 
+@font-face {
+  font-family: "GenEiKoburiMin6-R";
+  src: url("../fonts/GenEiKoburiMin_v6.1/fontSize/GenEiKoburiMin6-R.woff") format("woff"),
+    url("../fonts/GenEiKoburiMin_v6.1/fontSize/GenEiKoburiMin6-R.ttf") format("truetype"),
+    url("../fonts/GenEiKoburiMin_v6.1/fontSize/GenEiKoburiMin6-R.eot") format("embedded-opentype");
+}
+
 @import "../bower_components/text-hover-effects/sass/css-classes";
 
 html {
@@ -68,7 +75,6 @@ html {
         @include transition-opt();
         @include left-down;
       }
-      
     }
   }
 }
@@ -319,6 +325,70 @@ html {
   .blog-slider {
     margin-top: 10px;
     padding-left: 65px;
+  }
+
+  .qna {
+    .qnaTitle {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 1.2;
+      font-family: "Sawarabi Mincho", sans-serif;
+      margin-top: 90px;
+      margin-bottom: 50px;
+    }
+
+    .question {
+      margin-left: 186px;
+      max-width: 680px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: "GenEiKoburiMin6-R";
+      font-size: 0.9rem;
+
+
+      .questionTitle {
+        max-width: 20%;
+        font-weight: bold;
+      }
+      .questionText {
+        padding-right: 0px;
+      }
+    }
+
+    .address {
+      margin-left: 186px;
+      max-width: 680px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: "GenEiKoburiMin6-R";
+      font-size: 0.9rem;
+
+
+      .addressTitle {
+        max-width: 20%;
+        font-weight: bold;
+      }
+      .addressText {
+        padding-right: 0px;
+      }
+    }
+
+    .goto {
+      margin-left: 186px;
+      max-width: 680px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: "GenEiKoburiMin6-R";
+      font-size: 0.9rem;
+
+      .gotoTitle {
+        max-width: 20%;
+        font-weight: bold;
+      }
+      .gotoText {
+        padding-right: 0px;
+      }
+    }
   }
 }
 

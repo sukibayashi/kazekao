@@ -1,328 +1,325 @@
 @font-face {
-    font-family: 'Makinas-4-Flat';
-    src: url('../fonts/makinas4/fontSize/Makinas-4-Flat.woff') format("woff"),
-        url('../fonts/makinas4/fontSize/Makinas-4-Flat.ttf') format("truetype"),
-        url('../fonts/makinas4/fontSize/Makinas-4-Flat.eot') format("embedded-opentype");
+  font-family: "Makinas-4-Flat";
+  src: url("../fonts/makinas4/fontSize/Makinas-4-Flat.woff") format("woff"),
+    url("../fonts/makinas4/fontSize/Makinas-4-Flat.ttf") format("truetype"),
+    url("../fonts/makinas4/fontSize/Makinas-4-Flat.eot") format("embedded-opentype");
 }
 
 @font-face {
-    font-family: 'komorebi-gothic';
-    src: url('../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.woff') format("woff"),
-        url('../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.ttf') format("truetype"),
-        url('../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.eot') format("embedded-opentype");
+  font-family: "komorebi-gothic";
+  src: url("../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.woff") format("woff"),
+    url("../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.ttf") format("truetype"),
+    url("../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.eot") format("embedded-opentype");
 }
 
 @font-face {
-    font-family: 'Harenosora';
-    src: url('../fonts/hare/fontSize/Harenosora.woff') format("woff"),
-        url('../fonts/hare/fontSize/Harenosora.ttf') format("truetype"),
-        url('../fonts/hare/fontSize/Harenosora.eot') format("embedded-opentype");
+  font-family: "Harenosora";
+  src: url("../fonts/hare/fontSize/Harenosora.woff") format("woff"),
+    url("../fonts/hare/fontSize/Harenosora.ttf") format("truetype"),
+    url("../fonts/hare/fontSize/Harenosora.eot") format("embedded-opentype");
 }
 
 @font-face {
-    font-family: 'f910-shin-comic-2.04';
-    src: url('../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.woff') format("woff"),
-        url('../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.ttf') format("truetype"),
-        url('../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.eot') format("embedded-opentype");
+  font-family: "f910-shin-comic-2.04";
+  src: url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.woff") format("woff"),
+    url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.ttf") format("truetype"),
+    url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.eot") format("embedded-opentype");
+}
+
+@import "../bower_components/text-hover-effects/sass/css-classes";
+
+html {
+  scroll-behavior: smooth;
 }
 
 //991px以上不顯示Navbar
 .navShow {
-    display: none;
+  display: none;
 
-    @media (max-width:991px) {
-        display: flex;
-    }
+  @media (max-width: 991px) {
+    display: flex;
+  }
 }
 
 //mainLeft
 .mainLeft {
-    margin-top: 26px;
+  margin-top: 26px;
 
-    ul {
-        list-style-type: none;
-        position: fixed;
+  ul {
+    list-style-type: none;
+    position: fixed;
 
-        .title_01 {
-            font-family: 'Sawarabi Mincho', sans-serif;
+    .title_01 {
+      font-family: "Sawarabi Mincho", sans-serif;
 
-        }
-
-        .title_02 {
-            margin-top: 20px;
-            font-family: 'Makinas-4-Flat';
-
-
-        }
-
+      a {
+        color: black;
+        text-decoration: none;
+      }
     }
-}
 
+    .title_02 {
+      margin-top: 20px;
+      font-family: "Makinas-4-Flat";
+
+      a {
+        color: black;
+        text-decoration: none;
+        @include transition-opt();
+        @include left-down;
+      }
+      
+    }
+  }
+}
 
 //mainRight
 .mainRight {
+  //首頁動畫
+  .movie {
+    margin-top: 66px;
+    position: relative;
 
-    //首頁動畫
-    .movie {
-        margin-top: 66px;
-        position: relative;
+    .topTitle {
+      box-sizing: border-box;
+      position: absolute;
+      top: -54px;
+      right: 54.7%;
+      z-index: 100;
+      writing-mode: vertical-rl;
 
-        .topTitle {
-            box-sizing: border-box;
-            width: 80%;
+      .topTitle_01 {
+        .topTitle_01_inner {
+          font-family: "Noto Serif JP", serif;
+          font-size: 3.3rem;
+          line-height: 1.4;
+          font-weight: 700;
+        }
+      }
+
+      .topTitle_02 {
+        font-family: "Noto Serif JP", serif;
+        font-size: 1rem;
+        line-height: 2.1;
+      }
+    }
+
+    .titleImg {
+      width: 800px;
+    }
+  }
+
+  //關於
+  .about {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .aboutTitle {
+      text-align: center;
+      font-family: "Sawarabi Mincho", sans-serif;
+
+      h2 {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .aboutMain {
+    .aboutImage {
+      .aboutImage_01 {
+        .aboutImage_01_01 {
+          .aboutImage_01_01img {
+            width: 150px;
+          }
+        }
+
+        .aboutImage_01_02 {
+          .aboutImage_01_02img {
+            width: 150px;
+          }
+        }
+
+        .aboutImage_01_03 {
+          .aboutImage_01_03img {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .aboutContent {
+      padding-left: 28px;
+
+      .aboutContentRow {
+        width: 80%;
+
+        .aboutContents {
+          margin-top: 16px;
+
+          .aboutText {
+            font-size: 0.9rem;
+            font-family: "komorebi-gothic";
+          }
+        }
+      }
+    }
+  }
+
+  .photos {
+    margin-top: 70px;
+
+    .photosTitle {
+      text-align: center;
+
+      h3 {
+        font-family: "Sawarabi Mincho", sans-serif;
+        margin-bottom: 30px;
+        font-size: 900;
+      }
+    }
+
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+
+          img {
+            width: 100%;
+          }
+
+          // Swiper Page1
+          .title1 {
             position: absolute;
-            top: -54px;
-            right: 54.7%;
             z-index: 100;
+            bottom: 124px;
+            left: 17px;
+            font-size: 3rem;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          .subtitle1 {
+            position: absolute;
+            z-index: 100;
+            bottom: 86px;
+            left: 20px;
+            font-size: 2rem;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          .text1 {
+            position: absolute;
+            width: 300px;
+            z-index: 100;
+            bottom: 0px;
+            left: 20px;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          // Swiper Page2
+          .title2 {
+            position: absolute;
+            z-index: 100;
+            bottom: 95px;
+            left: 300px;
+            font-size: 2rem;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          .subtitle2 {
+            position: absolute;
+            z-index: 100;
+            bottom: 74px;
+            left: 249px;
+            font-size: 1.2rem;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          // Swiper Page3
+          .title3 {
+            position: absolute;
+            height: 308px;
+            z-index: 100;
+            bottom: 150px;
+            right: 30px;
+            font-size: 2.5rem;
+            letter-spacing: 42px;
+            font-family: "Sawarabi Mincho", sans-serif;
+            color: white;
             writing-mode: vertical-rl;
+          }
 
-            .topTitle_01 {
-                .topTitle_01_inner {
-                    font-family: 'Noto Serif JP', serif;
-                    font-size: 3.3rem;
-                    line-height: 1.4;
-                    font-weight: 700;
-                }
-
-            }
-
-            .topTitle_02 {
-                font-family: 'Noto Serif JP', serif;
-                font-size: 1rem;
-                line-height: 2.1;
-            }
-        }
-
-        .titleImg {
-            width: 800px;
-        }
-    }
-
-    //關於
-    .about {
-        margin-top: 70px;
-        margin-bottom: 70px;
-
-        .aboutTitle {
-            text-align: center;
-            font-family: 'Sawarabi Mincho', sans-serif;
-
-            h2 {
-                font-weight: 700;
-            }
-        }
-    }
-
-    .aboutMain {
-
-        .aboutImage {
-            .aboutImage_01 {
-
-                .aboutImage_01_01 {
-                    .aboutImage_01_01img {
-                        width: 150px;
-                    }
-                }
-
-                .aboutImage_01_02 {
-                    .aboutImage_01_02img {
-                        width: 150px;
-                    }
-                }
-
-                .aboutImage_01_03 {
-                    .aboutImage_01_03img {
-                        width: 150px;
-                    }
-                }
-            }
-        }
-
-        .aboutContent {
-            padding-left: 28px;
-
-            .aboutContentRow {
-                width: 80%;
-
-                .aboutContents {
-                    margin-top: 16px;
-
-                    .aboutText {
-                        font-size: 0.9rem;
-                        font-family: 'komorebi-gothic';
-
-                    }
-                }
-            }
-        }
-    }
-
-    .photos {
-        margin-top: 70px;
-
-        .photosTitle {
-            text-align: center;
-
-            h3 {
-                font-family: 'Sawarabi Mincho', sans-serif;
-                margin-bottom: 30px;
-                font-size: 900;
-            }
-        }
-
-        .swiper-container {
-
-            .swiper-wrapper {
-
-                .swiper-slide {
-                    position: relative;
-
-                    img {
-                        width: 100%;
-                    }
-
-                    // Swiper Page1
-                    .title1 {
-                        position: absolute;
-                        z-index: 100;
-                        bottom: 124px;
-                        left: 17px;
-                        font-size: 3rem;
-                        font-family: 'Harenosora';
-                        color: white;
-
-                    }
-
-                    .subtitle1 {
-                        position: absolute;
-                        z-index: 100;
-                        bottom: 86px;
-                        left: 20px;
-                        font-size: 2rem;
-                        font-family: 'Harenosora';
-                        color: white;
-
-                    }
-
-                    .text1 {
-                        position: absolute;
-                        width: 300px;
-                        z-index: 100;
-                        bottom: 0px;
-                        left: 20px;
-                        font-family: 'Harenosora';
-                        color: white;
-
-                    }
-
-                    // Swiper Page2
-                    .title2 {
-                        position: absolute;
-                        z-index: 100;
-                        bottom: 95px;
-                        left: 300px;
-                        font-size: 2rem;
-                        font-family: 'Harenosora';
-                        color: white;
-                    }
-
-                    .subtitle2 {
-                        position: absolute;
-                        z-index: 100;
-                        bottom: 74px;
-                        left: 249px;
-                        font-size: 1.2rem;
-                        font-family: 'Harenosora';
-                        color: white;
-                    }
-
-                    // Swiper Page3
-                    .title3 {
-                        position: absolute;
-                        height: 308px;
-                        z-index: 100;
-                        bottom: 150px;
-                        right: 30px;
-                        font-size: 2.5rem;
-                        letter-spacing: 42px;
-                        font-family: 'Sawarabi Mincho', sans-serif;
-                        color: white;
-                        writing-mode: vertical-rl;
-
-                    }
-
-                    .subtitle3 {
-                        position: absolute;
-                        line-height: 1.5;
-                        height: 270px;
-                        z-index: 100;
-                        bottom: 140px;
-                        right: 83px;
-                        font-size: 1.3rem;
-                        letter-spacing: 2px;
-                        font-family: 'Sawarabi Mincho', sans-serif;
-                        color: white;
-                        writing-mode: vertical-rl;
-
-                    }
-
-                    .text3 {
-                        position: absolute;
-                        width: 400px;
-                        z-index: 100;
-                        bottom: 0px;
-                        left: 20px;
-                        font-size: 0.9rem;
-                        font-family: 'Harenosora';
-                        color: white;
-                    }
-
-                    // Swiper Page4
-                    .title4 {
-                        position: absolute;
-                        z-index: 100;
-                        bottom: 124px;
-                        left: 17px;
-                        font-size: 3rem;
-                        font-family: 'Harenosora';
-                        color: white;
-
-                    }
-
-                    .text4 {
-                        position: absolute;
-                        width: 500px;
-                        z-index: 100;
-                        bottom: 0px;
-                        font-size: 0.9rem;
-                        left: 20px;
-                        font-family: 'Harenosora';
-                        color: white;
-
-                    }
-                }
-            }
-        }
-    }
-
-    .newsTitle {
-        margin-top: 100px;
-        position: relative;
-
-        .newsText {
+          .subtitle3 {
             position: absolute;
-            bottom: -24px;
+            line-height: 1.5;
+            height: 270px;
             z-index: 100;
-            font-family: 'Harenosora';
+            bottom: 140px;
+            right: 83px;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            font-family: "Sawarabi Mincho", sans-serif;
+            color: white;
+            writing-mode: vertical-rl;
+          }
 
+          .text3 {
+            position: absolute;
+            width: 400px;
+            z-index: 100;
+            bottom: 0px;
+            left: 20px;
+            font-size: 0.9rem;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          // Swiper Page4
+          .title4 {
+            position: absolute;
+            z-index: 100;
+            bottom: 124px;
+            left: 17px;
+            font-size: 3rem;
+            font-family: "Harenosora";
+            color: white;
+          }
+
+          .text4 {
+            position: absolute;
+            width: 500px;
+            z-index: 100;
+            bottom: 0px;
+            font-size: 0.9rem;
+            left: 20px;
+            font-family: "Harenosora";
+            color: white;
+          }
         }
+      }
     }
+  }
 
-    .blog-slider {
-        margin-top: 10px;
-        padding-left: 65px;
+  .newsTitle {
+    margin-top: 100px;
+    position: relative;
 
+    .newsText {
+      position: absolute;
+      bottom: -24px;
+      z-index: 100;
+      font-family: "Harenosora";
     }
+  }
+
+  .blog-slider {
+    margin-top: 10px;
+    padding-left: 65px;
+  }
 }
 
-//     
+//

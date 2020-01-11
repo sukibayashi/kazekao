@@ -178,9 +178,6 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 300px;
-  background-image: linear-gradient(147deg, #1466a8 32%, #0e4b81 100%);
-  -webkit-box-shadow: 4px 13px 30px 1px #1466a870;
-          box-shadow: 4px 13px 30px 1px #1466a870;
   border-radius: 20px;
   -webkit-transform: translateX(-80px);
           transform: translateX(-80px);

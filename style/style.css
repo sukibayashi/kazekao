@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'Makinas-4-Flat';
+  src: url("../fonts/makinas4/fontSize/Makinas-4-Flat.woff") format("woff"), url("../fonts/makinas4/fontSize/Makinas-4-Flat.ttf") format("truetype"), url("../fonts/makinas4/fontSize/Makinas-4-Flat.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'komorebi-gothic';
+  src: url("../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.woff") format("woff"), url("../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.ttf") format("truetype"), url("../fonts/MODI_komorebi-gothic_2018_0501/fontSize/komorebi-gothic.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'Harenosora';
+  src: url("../fonts/hare/fontSize/Harenosora.woff") format("woff"), url("../fonts/hare/fontSize/Harenosora.ttf") format("truetype"), url("../fonts/hare/fontSize/Harenosora.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'f910-shin-comic-2.04';
+  src: url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.woff") format("woff"), url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.ttf") format("truetype"), url("../fonts/f910-shin-comic-2.04/fontSize/f910-shin-comic-2.04.eot") format("embedded-opentype");
+}
+
+.navShow {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navShow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mainLeft {
+  margin-top: 26px;
+}
+
+.mainLeft ul {
+  list-style-type: none;
+  position: fixed;
+}
+
+.mainLeft ul .title_01 {
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.mainLeft ul .title_02 {
+  margin-top: 20px;
+  font-family: 'Makinas-4-Flat';
+}
+
+.mainRight .movie {
+  margin-top: 66px;
+  position: relative;
+}
+
+.mainRight .movie .topTitle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  position: absolute;
+  top: -54px;
+  right: 54.7%;
+  z-index: 100;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.mainRight .movie .topTitle .topTitle_01 .topTitle_01_inner {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3.3rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.mainRight .movie .topTitle .topTitle_02 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  line-height: 2.1;
+}
+
+.mainRight .movie .titleImg {
+  width: 800px;
+}
+
+.mainRight .about {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.mainRight .about .aboutTitle {
+  text-align: center;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.mainRight .about .aboutTitle h2 {
+  font-weight: 700;
+}
+
+.mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_01 .aboutImage_01_01img {
+  width: 150px;
+}
+
+.mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_02 .aboutImage_01_02img {
+  width: 150px;
+}
+
+.mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_03 .aboutImage_01_03img {
+  width: 150px;
+}
+
+.mainRight .aboutMain .aboutContent {
+  padding-left: 28px;
+}
+
+.mainRight .aboutMain .aboutContent .aboutContentRow {
+  width: 80%;
+}
+
+.mainRight .aboutMain .aboutContent .aboutContentRow .aboutContents {
+  margin-top: 16px;
+}
+
+.mainRight .aboutMain .aboutContent .aboutContentRow .aboutContents .aboutText {
+  font-size: 0.9rem;
+  font-family: 'komorebi-gothic';
+}
+
+.mainRight .photos {
+  margin-top: 70px;
+}
+
+.mainRight .photos .photosTitle {
+  text-align: center;
+}
+
+.mainRight .photos .photosTitle h3 {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin-bottom: 30px;
+  font-size: 900;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title1 {
+  position: absolute;
+  z-index: 100;
+  bottom: 124px;
+  left: 17px;
+  font-size: 3rem;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle1 {
+  position: absolute;
+  z-index: 100;
+  bottom: 86px;
+  left: 20px;
+  font-size: 2rem;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text1 {
+  position: absolute;
+  width: 300px;
+  z-index: 100;
+  bottom: 0px;
+  left: 20px;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title2 {
+  position: absolute;
+  z-index: 100;
+  bottom: 95px;
+  left: 300px;
+  font-size: 2rem;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle2 {
+  position: absolute;
+  z-index: 100;
+  bottom: 74px;
+  left: 249px;
+  font-size: 1.2rem;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title3 {
+  position: absolute;
+  height: 308px;
+  z-index: 100;
+  bottom: 150px;
+  right: 30px;
+  font-size: 2.5rem;
+  letter-spacing: 42px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: white;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle3 {
+  position: absolute;
+  line-height: 1.5;
+  height: 270px;
+  z-index: 100;
+  bottom: 140px;
+  right: 83px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: white;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text3 {
+  position: absolute;
+  width: 400px;
+  z-index: 100;
+  bottom: 0px;
+  left: 20px;
+  font-size: 0.9rem;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title4 {
+  position: absolute;
+  z-index: 100;
+  bottom: 124px;
+  left: 17px;
+  font-size: 3rem;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text4 {
+  position: absolute;
+  width: 500px;
+  z-index: 100;
+  bottom: 0px;
+  font-size: 0.9rem;
+  left: 20px;
+  font-family: 'Harenosora';
+  color: white;
+}
+
+.mainRight .newsTitle {
+  margin-top: 100px;
+  position: relative;
+}
+
+.mainRight .newsTitle .newsText {
+  position: absolute;
+  bottom: -24px;
+  z-index: 100;
+  font-family: 'Harenosora';
+}
+
+.mainRight .blog-slider {
+  margin-top: 10px;
+  padding-left: 65px;
+}
+/*# sourceMappingURL=style.css.map */

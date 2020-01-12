@@ -10,6 +10,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Aos JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- index CSS -->
     <link rel="stylesheet" href="./style/style.css">
     <!-- News CSS -->
@@ -19,12 +23,11 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
+
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
-    <!-- Aos JS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/style/aos.css">
+
 
     <title>かぜかお日本語学院</title>
 </head>
@@ -66,7 +69,9 @@
             <div class="mainLeft col-xl-3 col-lg-3">
                 <ul>
                     <li class="title_01">
-                        <a href="#main"><h1>かぜかお<br>日本語学院</h1></a>
+                        <a href="#main">
+                            <h1>かぜかお<br>日本語学院</h1>
+                        </a>
                     </li>
                     <li class="title_02">
                         <a class="element left-goes-down" href="#about">私たちの希望</a>
@@ -104,11 +109,10 @@
                                 次世代に繋がる未来を作るお手伝い。
                             </div>
                         </div>
-
                     </div>
-                    <!-- <img class="titleImg" src="./img/titleImg.jpg" alt=""> -->
-                    <video autoplay muted loop id="myVideo" class="video_back">
-                        <source class="titleImg" src="/video/sakura2.mp4" type="video/mp4">
+
+                    <video autoplay muted loop class="titleImg">
+                        <source src="./video/sakura2.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
@@ -283,8 +287,7 @@
                         <div class="blog-slider__item swiper-slide">
                             <div class="blog-slider__img">
 
-                                <img src="./img/newSemester-3.jpg"
-                                    alt="">
+                                <img src="./img/newSemester-3.jpg" alt="">
                             </div>
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">12月22日　日曜日</span>
@@ -295,8 +298,7 @@
                         </div>
                         <div class="blog-slider__item swiper-slide">
                             <div class="blog-slider__img">
-                                <img src="./img/newYear.jpg"
-                                    alt="">
+                                <img src="./img/newYear.jpg" alt="">
                             </div>
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">1月1日　水曜日</span>
@@ -307,8 +309,7 @@
 
                         <div class="blog-slider__item swiper-slide">
                             <div class="blog-slider__img">
-                                <img src="./img/yamagatabiennale.jpg"
-                                    alt="">
+                                <img src="./img/yamagatabiennale.jpg" alt="">
                             </div>
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">4月6日　月曜日</span>
@@ -332,7 +333,7 @@
                         <h2 class="qnaTitle" data-aos="example-anim6">要</h2>
                     </div>
 
-                    
+
 
                     <div class="question row">
                         <div class="questionTitle col-xl-4 col-lg-4">お問い合わせ</div>
@@ -358,12 +359,19 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
     </script>
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
@@ -399,14 +407,6 @@
                 el: '.blog-slider__pagination',
                 clickable: true,
             }
-        });
-    </script>
-
-    <!-- Aos JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 3000,
         });
     </script>
 </body>

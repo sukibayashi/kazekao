@@ -35,6 +35,78 @@
 
 @import "../bower_components/text-hover-effects/sass/css-classes";
 
+// Aos JS
+[data-aos="example-anim1"] {
+  transform: translateX(-5px) translateY(-10px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
+[data-aos="example-anim2"] {
+  transform: translateX(5px) translateY(38px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
+[data-aos="example-anim3"] {
+  transform: translateX(2px) translateY(27px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
+[data-aos="example-anim4"] {
+  transform: translateX(-10px) translateY(20px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
+[data-aos="example-anim5"] {
+  transform: translateX(14px) translateY(-18px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
+[data-aos="example-anim6"] {
+  transform: translateX(5px) translateY(15px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
+[data-aos="example-anim7"] {
+  transform: translateX(0px) translateY(-10px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+// Aos JS
+
 html {
   scroll-behavior: smooth;
 }

@@ -22,6 +22,10 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
+    <!-- Aos JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/aos.css">
+
     <title>かぜかお日本語学院</title>
 </head>
 
@@ -106,10 +110,31 @@
                 </div>
                 <div id="about" class="about">
                     <div class="aboutTitle">
-                        <div class="aboutTitle_01">
-                            <h2>私たちの希望</h2>
+                        <div class="aboutTitle_01" style="display: flex; justify-content: center;">
+                            <!-- <h2>私たちの希望</h2> -->
+                            <h2 data-aos="example-anim1">私</h2>
+                            <h2 data-aos="example-anim2">た</h2>
+                            <h2 data-aos="example-anim3">ち</h2>
+                            <h2 data-aos="example-anim4">の</h2>
+                            <h2 data-aos="example-anim5">希</h2>
+                            <h2 data-aos="example-anim6">望</h2>
                         </div>
-                        <div class="aboutTitle_02">みなさまのおいかぜになる</div>
+                        <div class="aboutTitle_02" style="display: flex; justify-content: center;">
+                            <!-- <p>みなさまのおいかぜになる</p> -->
+                            <p data-aos="example-anim5">み</p>
+                            <p data-aos="example-anim1">な</p>
+                            <p data-aos="example-anim4">さ</p>
+                            <p data-aos="example-anim5">ま</p>
+                            <p data-aos="example-anim2">の</p>
+                            <p data-aos="example-anim7">お</p>
+                            <p data-aos="example-anim4">い</p>
+                            <p data-aos="example-anim5">か</p>
+                            <p data-aos="example-anim6">ぜ</p>
+                            <p data-aos="example-anim1">に</p>
+                            <p data-aos="example-anim4">な</p>
+                            <p data-aos="example-anim7">る</p>
+
+                        </div>
                     </div>
                 </div>
                 <div class="aboutMain row">
@@ -184,8 +209,12 @@
                     </div>
                 </div>
                 <div id="photos" class="photos">
-                    <div class="photosTitle">
-                        <h3>学院写真</h3>
+                    <div class="photosTitle" style="display: flex; justify-content: center;">
+                        <!-- <h3>学院写真</h3> -->
+                        <h3 data-aos="example-anim1">学</h3>
+                        <h3 data-aos="example-anim4">院</h3>
+                        <h3 data-aos="example-anim5">写</h3>
+                        <h3 data-aos="example-anim6">真</h3>
                     </div>
                     <!-- Swiper -->
                     <div class="swiper-container">
@@ -236,6 +265,14 @@
                 </div>
                 <div id="news" class="newsTitle">
                     <h2 class="newsText">新着ニュースー覧</h2>
+                    <!-- <h2 class="newsText">新</h2>
+                    <h2 class="newsText">着</h2>
+                    <h2 class="newsText">ニ</h2>
+                    <h2 class="newsText">ュ</h2>
+                    <h2 class="newsText">ー</h2>
+                    <h2 class="newsText">ス</h2>
+                    <h2 class="newsText">ー</h2>
+                    <h2 class="newsText">覧</h2> -->
                 </div>
                 <div class="blog-slider">
                     <div class="blog-slider__wrp swiper-wrapper">
@@ -283,7 +320,13 @@
                     <div class="blog-slider__pagination"></div>
                 </div>
                 <div id="qna" class="qna">
-                    <h2 class="qnaTitle">施設概要</h2>
+                    <!-- <h2 class="qnaTitle">施設概要</h2> -->
+                    <div class="qnaTitle_Flex" style="display: flex; justify-content: center;">
+                        <h2 class="qnaTitle" data-aos="example-anim1">施</h2>
+                        <h2 class="qnaTitle" data-aos="example-anim4">設</h2>
+                        <h2 class="qnaTitle" data-aos="example-anim5">概</h2>
+                        <h2 class="qnaTitle" data-aos="example-anim6">要</h2>
+                    </div>
 
                     
 
@@ -352,6 +395,14 @@
                 el: '.blog-slider__pagination',
                 clickable: true,
             }
+        });
+    </script>
+
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
         });
     </script>
 </body>

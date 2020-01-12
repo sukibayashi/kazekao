@@ -123,10 +123,12 @@ html {
     .aboutTitle {
       text-align: center;
       font-family: "Sawarabi Mincho", sans-serif;
+      
+        h2 {
+          font-weight: 700;
 
-      h2 {
-        font-weight: 700;
-      }
+        }
+
     }
   }
 
@@ -328,14 +330,18 @@ html {
   }
 
   .qna {
-    .qnaTitle {
-      text-align: center;
-      font-size: 1.4rem;
-      line-height: 1.2;
-      font-family: "Sawarabi Mincho", sans-serif;
-      margin-top: 90px;
-      margin-bottom: 50px;
+
+    .qnaTitle_Flex{
+      .qnaTitle {
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        font-family: "Sawarabi Mincho", sans-serif;
+        margin-top: 90px;
+        margin-bottom: 50px;
+      }
     }
+
 
     .question {
       margin-left: 186px;

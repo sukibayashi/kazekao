@@ -4865,7 +4865,7 @@ html {
   padding-left: 65px;
 }
 
-.mainRight .qna .qnaTitle {
+.mainRight .qna .qnaTitle_Flex .qnaTitle {
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.2;

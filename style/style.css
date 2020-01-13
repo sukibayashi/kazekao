@@ -4773,6 +4773,18 @@ body {
   background-color: white !important;
 }
 
+.bg-light .navbar-toggler {
+  border: 0px !important;
+}
+
+.bg-light .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../img/menu_btn.png") !important;
+}
+
+.bg-light .navbar-toggler:focus {
+  outline: 0px !important;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 1105px;

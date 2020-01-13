@@ -174,12 +174,24 @@ body {
 
 .bg-light {
   background-color: white !important;
+
+  .navbar-toggler {
+    border: 0px !important;
+
+    .navbar-toggler-icon {
+      background-image: url('../img/menu_btn.png') !important;
+    }
+  }
+
+  .navbar-toggler:focus {
+    outline: 0px !important;
+  }
 }
 
 
 .container {
 
-  @media (max-width: 1199px){
+  @media (max-width: 1199px) {
     max-width: 1105px;
   }
 
@@ -238,7 +250,7 @@ body {
         box-sizing: border-box;
         position: absolute;
         top: -54px;
-        left:0px;
+        left: 0px;
         z-index: 100;
         writing-mode: vertical-rl;
 
@@ -524,9 +536,9 @@ body {
     .blog-slider {
       margin-top: 10px;
       padding-left: 65px;
-      
 
-      
+
+
       @media (max-width: 768px) {
         margin-top: 200px;
         margin-bottom: 0px;

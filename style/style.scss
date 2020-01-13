@@ -40,6 +40,7 @@
   transform: translateX(-5px) translateY(-10px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
@@ -50,6 +51,7 @@
   transform: translateX(5px) translateY(38px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
@@ -60,6 +62,7 @@
   transform: translateX(2px) translateY(27px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
@@ -70,6 +73,7 @@
   transform: translateX(-10px) translateY(20px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
@@ -80,6 +84,7 @@
   transform: translateX(14px) translateY(-18px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
@@ -90,6 +95,7 @@
   transform: translateX(5px) translateY(15px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
@@ -100,15 +106,27 @@
   transform: translateX(0px) translateY(-10px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 5;
   }
 }
+
 // Aos JS
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  @media (max-width:991px) {
+    display: block !important;
+  }
+
 }
 
 //991px以上不顯示Navbar
@@ -118,24 +136,15 @@ html {
   @media (max-width: 991px) {
     display: flex;
   }
-}
 
-//mainLeft
-.mainLeft {
-  margin-top: 26px;
-
-  ul {
-    list-style-type: none;
-    position: fixed;
-
-    .title_01 {
+  .navbar-brand {
+    .TopIcon {
       font-family: "Sawarabi Mincho", sans-serif;
-
-      a {
-        color: black;
-        text-decoration: none;
-      }
     }
+  }
+
+  .navbar-collapse {
+    text-align: center;
 
     .title_02 {
       margin-top: 20px;
@@ -145,329 +154,416 @@ html {
         color: black;
         text-decoration: none;
         @include transition-opt();
-        @include left-down;
+        @include move-down;
+
       }
     }
   }
 }
 
-//mainRight
-.mainRight {
-  //首頁動畫
-  .movie {
-    margin-top: 66px;
-    position: relative;
+.bg-light {
+  background-color: white !important;
+}
 
-    .topTitle {
-      box-sizing: border-box;
-      position: absolute;
-      top: -54px;
-      right: 54.7%;
-      z-index: 100;
-      writing-mode: vertical-rl;
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1105px;
+  }
+}
 
-      .topTitle_01 {
-        .topTitle_01_inner {
-          font-family: "Noto Serif JP", serif;
-          font-size: 3.3rem;
-          line-height: 1.4;
-          font-weight: 700;
+
+
+.container {
+
+  //mainLeft
+  .mainLeft {
+    margin-top: 26px;
+
+    @media (max-width:991px) {
+      display: none !important;
+    }
+
+    ul {
+      list-style-type: none;
+      position: fixed;
+
+      .title_01 {
+        font-family: "Sawarabi Mincho", sans-serif;
+
+        a {
+          color: black;
+          text-decoration: none;
         }
       }
 
-      .topTitle_02 {
-        font-family: "Noto Serif JP", serif;
-        font-size: 1rem;
-        line-height: 2.1;
-      }
-    }
+      .title_02 {
+        margin-top: 20px;
+        font-family: "Makinas-4-Flat";
 
-    .titleImg {
-      width: 800px;
+        a {
+          color: black;
+          text-decoration: none;
+          @include transition-opt();
+          @include left-down;
+        }
+      }
     }
   }
 
-  //關於
-  .about {
-    margin-top: 70px;
-    margin-bottom: 70px;
+  //mainRight
+  .mainRight {
 
-    .aboutTitle {
-      text-align: center;
-      font-family: "Sawarabi Mincho", sans-serif;
-      
+    @media (max-width:1199px) {
+      padding-left: 30px;
+    }
+
+    //首頁動畫
+    .movie {
+      margin-top: 66px;
+      position: relative;
+
+      .topTitle {
+        box-sizing: border-box;
+        position: absolute;
+        top: -54px;
+        right: 54.7%;
+        z-index: 100;
+        writing-mode: vertical-rl;
+
+        @media (max-width:1199px) {
+          left: 378px;
+        }
+
+        .topTitle_01 {
+          .topTitle_01_inner {
+            font-family: "Noto Serif JP", serif;
+            font-size: 3.3rem;
+            line-height: 1.4;
+            font-weight: 700;
+          }
+        }
+
+        .topTitle_02 {
+          font-family: "Noto Serif JP", serif;
+          font-size: 1rem;
+          line-height: 2.1;
+        }
+      }
+
+      .titleImg {
+        width: 800px;
+
+        @media (max-width:1199px) {
+          width: 100%;
+        }
+      }
+    }
+
+    //關於
+    .about {
+      margin-top: 70px;
+      margin-bottom: 70px;
+
+      .aboutTitle {
+        text-align: center;
+        font-family: "Sawarabi Mincho", sans-serif;
+
         h2 {
           font-weight: 700;
 
         }
 
+      }
     }
-  }
 
-  .aboutMain {
-    .aboutImage {
-      .aboutImage_01 {
-        .aboutImage_01_01 {
-          .aboutImage_01_01img {
-            width: 150px;
+    .aboutMain {
+
+      .aboutImage {
+        .aboutImage_01 {
+
+          @media (max-width: 991px){
+            justify-content: center;
+          }
+
+          .aboutImage_01_01 {
+
+            .aboutImage_01_01img {
+              width: 150px;
+
+            }
+          }
+
+          .aboutImage_01_02 {
+            .aboutImage_01_02img {
+              width: 150px;
+            }
+          }
+
+          .aboutImage_01_03 {
+            .aboutImage_01_03img {
+              width: 150px;
+            }
           }
         }
+      }
 
-        .aboutImage_01_02 {
-          .aboutImage_01_02img {
-            width: 150px;
-          }
+      .aboutContent {
+        padding-left: 28px;
+
+        @media (max-width:1199px) {
+          padding-left: 50px;
         }
 
-        .aboutImage_01_03 {
-          .aboutImage_01_03img {
-            width: 150px;
+        .aboutContentRow {
+          width: 80%;
+
+          @media (max-width:1199px) {
+            width: 89%;
+          }
+
+          .aboutContents {
+            margin-top: 16px;
+            
+
+            .aboutText {
+              font-size: 0.9rem;
+              font-family: "komorebi-gothic";
+            }
           }
         }
       }
     }
 
-    .aboutContent {
-      padding-left: 28px;
+    .photos {
+      margin-top: 70px;
 
-      .aboutContentRow {
-        width: 80%;
-
-        .aboutContents {
-          margin-top: 16px;
-
-          .aboutText {
-            font-size: 0.9rem;
-            font-family: "komorebi-gothic";
-          }
-        }
-      }
-    }
-  }
-
-  .photos {
-    margin-top: 70px;
-
-    .photosTitle {
-      text-align: center;
-
-      h3 {
-        font-family: "Sawarabi Mincho", sans-serif;
-        margin-bottom: 30px;
-        font-size: 900;
-      }
-    }
-
-    .swiper-container {
-      .swiper-wrapper {
-        .swiper-slide {
-          position: relative;
-
-          img {
-            width: 100%;
-          }
-
-          // Swiper Page1
-          .title1 {
-            position: absolute;
-            z-index: 100;
-            bottom: 124px;
-            left: 17px;
-            font-size: 3rem;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          .subtitle1 {
-            position: absolute;
-            z-index: 100;
-            bottom: 86px;
-            left: 20px;
-            font-size: 2rem;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          .text1 {
-            position: absolute;
-            width: 300px;
-            z-index: 100;
-            bottom: 0px;
-            left: 20px;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          // Swiper Page2
-          .title2 {
-            position: absolute;
-            z-index: 100;
-            bottom: 95px;
-            left: 300px;
-            font-size: 2rem;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          .subtitle2 {
-            position: absolute;
-            z-index: 100;
-            bottom: 74px;
-            left: 249px;
-            font-size: 1.2rem;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          // Swiper Page3
-          .title3 {
-            position: absolute;
-            height: 308px;
-            z-index: 100;
-            bottom: 150px;
-            right: 30px;
-            font-size: 2.5rem;
-            letter-spacing: 42px;
-            font-family: "Sawarabi Mincho", sans-serif;
-            color: white;
-            writing-mode: vertical-rl;
-          }
-
-          .subtitle3 {
-            position: absolute;
-            line-height: 1.5;
-            height: 270px;
-            z-index: 100;
-            bottom: 140px;
-            right: 83px;
-            font-size: 1.3rem;
-            letter-spacing: 2px;
-            font-family: "Sawarabi Mincho", sans-serif;
-            color: white;
-            writing-mode: vertical-rl;
-          }
-
-          .text3 {
-            position: absolute;
-            width: 400px;
-            z-index: 100;
-            bottom: 0px;
-            left: 20px;
-            font-size: 0.9rem;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          // Swiper Page4
-          .title4 {
-            position: absolute;
-            z-index: 100;
-            bottom: 124px;
-            left: 17px;
-            font-size: 3rem;
-            font-family: "Harenosora";
-            color: white;
-          }
-
-          .text4 {
-            position: absolute;
-            width: 500px;
-            z-index: 100;
-            bottom: 0px;
-            font-size: 0.9rem;
-            left: 20px;
-            font-family: "Harenosora";
-            color: white;
-          }
-        }
-      }
-    }
-  }
-
-  .newsTitle {
-    margin-top: 100px;
-    position: relative;
-
-    .newsText {
-      position: absolute;
-      bottom: -24px;
-      z-index: 100;
-      font-family: "Harenosora";
-    }
-  }
-
-  .blog-slider {
-    margin-top: 10px;
-    padding-left: 65px;
-  }
-
-  .qna {
-
-    .qnaTitle_Flex{
-      .qnaTitle {
+      .photosTitle {
         text-align: center;
-        font-size: 1.4rem;
-        line-height: 1.2;
-        font-family: "Sawarabi Mincho", sans-serif;
-        margin-top: 90px;
-        margin-bottom: 50px;
+
+        h3 {
+          font-family: "Sawarabi Mincho", sans-serif;
+          margin-bottom: 30px;
+          font-size: 900;
+        }
+      }
+
+      .swiper-container {
+        .swiper-wrapper {
+          .swiper-slide {
+            position: relative;
+
+            img {
+              width: 100%;
+            }
+
+            // Swiper Page1
+            .title1 {
+              position: absolute;
+              z-index: 100;
+              bottom: 124px;
+              left: 17px;
+              font-size: 3rem;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            .subtitle1 {
+              position: absolute;
+              z-index: 100;
+              bottom: 86px;
+              left: 20px;
+              font-size: 2rem;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            .text1 {
+              position: absolute;
+              width: 300px;
+              z-index: 100;
+              bottom: 0px;
+              left: 20px;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            // Swiper Page2
+            .title2 {
+              position: absolute;
+              z-index: 100;
+              bottom: 95px;
+              left: 300px;
+              font-size: 2rem;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            .subtitle2 {
+              position: absolute;
+              z-index: 100;
+              bottom: 74px;
+              left: 249px;
+              font-size: 1.2rem;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            // Swiper Page3
+            .title3 {
+              position: absolute;
+              height: 308px;
+              z-index: 100;
+              bottom: 150px;
+              right: 30px;
+              font-size: 2.5rem;
+              letter-spacing: 42px;
+              font-family: "Sawarabi Mincho", sans-serif;
+              color: white;
+              writing-mode: vertical-rl;
+            }
+
+            .subtitle3 {
+              position: absolute;
+              line-height: 1.5;
+              height: 270px;
+              z-index: 100;
+              bottom: 140px;
+              right: 83px;
+              font-size: 1.3rem;
+              letter-spacing: 2px;
+              font-family: "Sawarabi Mincho", sans-serif;
+              color: white;
+              writing-mode: vertical-rl;
+            }
+
+            .text3 {
+              position: absolute;
+              width: 400px;
+              z-index: 100;
+              bottom: 0px;
+              left: 20px;
+              font-size: 0.9rem;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            // Swiper Page4
+            .title4 {
+              position: absolute;
+              z-index: 100;
+              bottom: 124px;
+              left: 17px;
+              font-size: 3rem;
+              font-family: "Harenosora";
+              color: white;
+            }
+
+            .text4 {
+              position: absolute;
+              width: 500px;
+              z-index: 100;
+              bottom: 0px;
+              font-size: 0.9rem;
+              left: 20px;
+              font-family: "Harenosora";
+              color: white;
+            }
+          }
+        }
       }
     }
 
+    .newsTitle {
+      margin-top: 100px;
+      position: relative;
 
-    .question {
-      margin-left: 186px;
-      max-width: 680px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-family: "GenEiKoburiMin6-R";
-      font-size: 0.9rem;
-
-
-      .questionTitle {
-        max-width: 20%;
-        font-weight: bold;
-      }
-      .questionText {
-        padding-right: 0px;
+      .newsText {
+        position: absolute;
+        bottom: -24px;
+        z-index: 100;
+        font-family: "Harenosora";
       }
     }
 
-    .address {
-      margin-left: 186px;
-      max-width: 680px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-family: "GenEiKoburiMin6-R";
-      font-size: 0.9rem;
-
-
-      .addressTitle {
-        max-width: 20%;
-        font-weight: bold;
-      }
-      .addressText {
-        padding-right: 0px;
-      }
+    .blog-slider {
+      margin-top: 10px;
+      padding-left: 65px;
     }
 
-    .goto {
-      margin-left: 186px;
-      max-width: 680px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-family: "GenEiKoburiMin6-R";
-      font-size: 0.9rem;
+    .qna {
 
-      .gotoTitle {
-        max-width: 20%;
-        font-weight: bold;
+      .qnaTitle_Flex {
+        .qnaTitle {
+          text-align: center;
+          font-size: 1.4rem;
+          line-height: 1.2;
+          font-family: "Sawarabi Mincho", sans-serif;
+          margin-top: 90px;
+          margin-bottom: 50px;
+        }
       }
-      .gotoText {
-        padding-right: 0px;
+
+
+      .question {
+        justify-content: center;
+        padding-left: 12%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: "GenEiKoburiMin6-R";
+        font-size: 0.9rem;
+
+
+        .questionTitle {
+          max-width: 20%;
+          font-weight: bold;
+        }
+
+        .questionText {
+          padding-right: 0px;
+        }
+      }
+
+      .address {
+        justify-content: center;
+        padding-left: 7.4%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: "GenEiKoburiMin6-R";
+        font-size: 0.9rem;
+
+
+        .addressTitle {
+          max-width: 20%;
+          font-weight: bold;
+        }
+
+        .addressText {
+          padding-left: 6px;
+        }
+      }
+
+      .goto {
+        justify-content: center;
+        padding-left: 16%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: "GenEiKoburiMin6-R";
+        font-size: 0.9rem;
+
+        .gotoTitle {
+          max-width: 20%;
+          font-weight: bold;
+        }
+
+        .gotoText {
+          padding-right: 0px;
+          padding-left: 20px;
+        }
       }
     }
   }
 }
+
+
 
 //

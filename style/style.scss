@@ -113,6 +113,17 @@
   }
 }
 
+[data-aos="example-anim8"] {
+  transform: translateX(0px) translateY(-40px);
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 5;
+  }
+}
+
 // Aos JS
 
 html {
@@ -165,15 +176,12 @@ body {
   background-color: white !important;
 }
 
-@media (max-width: 1199px) {
-  .container {
-    max-width: 1105px;
-  }
-}
-
-
 
 .container {
+
+  @media (max-width: 1199px){
+    max-width: 1105px;
+  }
 
   //mainLeft
   .mainLeft {
@@ -217,6 +225,10 @@ body {
       padding-left: 30px;
     }
 
+    @media (max-width:991px) {
+      padding-left: 15px;
+    }
+
     //首頁動畫
     .movie {
       margin-top: 66px;
@@ -226,12 +238,12 @@ body {
         box-sizing: border-box;
         position: absolute;
         top: -54px;
-        right: 54.7%;
+        left:0px;
         z-index: 100;
         writing-mode: vertical-rl;
 
         @media (max-width:1199px) {
-          left: 378px;
+          // left: 378px;
         }
 
         .topTitle_01 {
@@ -281,7 +293,7 @@ body {
       .aboutImage {
         .aboutImage_01 {
 
-          @media (max-width: 991px){
+          @media (max-width: 991px) {
             justify-content: center;
           }
 
@@ -314,6 +326,11 @@ body {
           padding-left: 50px;
         }
 
+        @media (max-width: 991px) {
+          margin-top: 50px;
+          padding-left: 145px;
+        }
+
         .aboutContentRow {
           width: 80%;
 
@@ -323,11 +340,11 @@ body {
 
           .aboutContents {
             margin-top: 16px;
-            
 
             .aboutText {
               font-size: 0.9rem;
               font-family: "komorebi-gothic";
+
             }
           }
         }
@@ -477,17 +494,43 @@ body {
       margin-top: 100px;
       position: relative;
 
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+      }
+
       .newsText {
         position: absolute;
         bottom: -24px;
         z-index: 100;
         font-family: "Harenosora";
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .newsText2 {
+        display: none;
+
+        @media (max-width: 768px) {
+          z-index: 100;
+          font-family: "Harenosora";
+          display: block;
+        }
       }
     }
 
     .blog-slider {
       margin-top: 10px;
       padding-left: 65px;
+      
+
+      
+      @media (max-width: 768px) {
+        margin-top: 200px;
+        margin-bottom: 0px;
+      }
     }
 
     .qna {

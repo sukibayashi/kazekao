@@ -4634,6 +4634,22 @@
   opacity: 5;
 }
 
+[data-aos="example-anim8"] {
+  -webkit-transform: translateX(0px) translateY(-40px);
+          transform: translateX(0px) translateY(-40px);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-aos="example-anim8"].aos-animate {
+  -webkit-transform: skewX(0);
+          transform: skewX(0);
+  opacity: 5;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -4873,6 +4889,12 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .container .mainRight {
+    padding-left: 15px;
+  }
+}
+
 .container .mainRight .movie {
   margin-top: 66px;
   position: relative;
@@ -4883,17 +4905,11 @@ body {
           box-sizing: border-box;
   position: absolute;
   top: -54px;
-  right: 54.7%;
+  left: 0px;
   z-index: 100;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-}
-
-@media (max-width: 1199px) {
-  .container .mainRight .movie .topTitle {
-    left: 378px;
-  }
 }
 
 .container .mainRight .movie .topTitle .topTitle_01 .topTitle_01_inner {
@@ -4960,6 +4976,13 @@ body {
 @media (max-width: 1199px) {
   .container .mainRight .aboutMain .aboutContent {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container .mainRight .aboutMain .aboutContent {
+    margin-top: 50px;
+    padding-left: 145px;
   }
 }
 
@@ -5122,6 +5145,17 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .container .mainRight .newsTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .container .mainRight .newsTitle .newsText {
   position: absolute;
   bottom: -24px;
@@ -5129,9 +5163,34 @@ body {
   font-family: "Harenosora";
 }
 
+@media (max-width: 768px) {
+  .container .mainRight .newsTitle .newsText {
+    display: none;
+  }
+}
+
+.container .mainRight .newsTitle .newsText2 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container .mainRight .newsTitle .newsText2 {
+    z-index: 100;
+    font-family: "Harenosora";
+    display: block;
+  }
+}
+
 .container .mainRight .blog-slider {
   margin-top: 10px;
   padding-left: 65px;
+}
+
+@media (max-width: 768px) {
+  .container .mainRight .blog-slider {
+    margin-top: 200px;
+    margin-bottom: 0px;
+  }
 }
 
 .container .mainRight .qna .qnaTitle_Flex .qnaTitle {

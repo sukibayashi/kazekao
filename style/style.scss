@@ -264,13 +264,21 @@ body {
             font-size: 3.3rem;
             line-height: 1.4;
             font-weight: 700;
+
+            @media (max-width:414px) {
+              font-size: 2.3rem;
+            }
           }
         }
 
         .topTitle_02 {
           font-family: "Noto Serif JP", serif;
-          font-size: 1rem;
+          font-size: 0.9rem;
           line-height: 2.1;
+
+          @media (max-width:414px) {
+            font-size: 0.4rem;
+          }
         }
       }
 
@@ -288,6 +296,11 @@ body {
       margin-top: 70px;
       margin-bottom: 70px;
 
+      @media (max-width:414px) {
+        margin-bottom: 10px;
+
+      }
+
       .aboutTitle {
         text-align: center;
         font-family: "Sawarabi Mincho", sans-serif;
@@ -303,6 +316,13 @@ body {
     .aboutMain {
 
       .aboutImage {
+
+        @media (max-width:414px) {
+          padding-left: 0px;
+          margin-right: 30px;
+
+        }
+
         .aboutImage_01 {
 
           @media (max-width: 991px) {
@@ -314,18 +334,29 @@ body {
             .aboutImage_01_01img {
               width: 150px;
 
+              @media (max-width:414px) {
+                width: 100px;
+              }
             }
           }
 
           .aboutImage_01_02 {
             .aboutImage_01_02img {
               width: 150px;
+
+              @media (max-width:414px) {
+                width: 100px;
+              }
             }
           }
 
           .aboutImage_01_03 {
             .aboutImage_01_03img {
               width: 150px;
+
+              @media (max-width:414px) {
+                width: 100px;
+              }
             }
           }
         }
@@ -341,6 +372,11 @@ body {
         @media (max-width: 991px) {
           margin-top: 50px;
           padding-left: 145px;
+        }
+
+        @media (max-width:414px) {
+          margin-top: 15px;
+          padding-left: 65px;
         }
 
         .aboutContentRow {
@@ -366,6 +402,10 @@ body {
     .photos {
       margin-top: 70px;
 
+      @media (max-width:414px) {
+        margin-top: 20px;
+      }
+
       .photosTitle {
         text-align: center;
 
@@ -386,6 +426,22 @@ body {
             }
 
             // Swiper Page1
+            .school03 {
+
+              @media (max-width:414px) {
+                display: none;
+
+              }
+            }
+
+            .school03Mobile {
+              display: none;
+
+              @media (max-width:414px) {
+                display: block;
+              }
+            }
+
             .title1 {
               position: absolute;
               z-index: 100;
@@ -394,6 +450,12 @@ body {
               font-size: 3rem;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                font-size: 1.75rem;
+                left: 5px;
+
+              }
             }
 
             .subtitle1 {
@@ -404,6 +466,12 @@ body {
               font-size: 2rem;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                font-size: 1.75rem;
+                left: 5px;
+
+              }
             }
 
             .text1 {
@@ -414,9 +482,32 @@ body {
               left: 20px;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                font-size: 0.9rem;
+                left: 7px;
+                width: 320px;
+
+              }
             }
 
             // Swiper Page2
+            .school01 {
+
+              @media (max-width:414px) {
+                display: none;
+
+              }
+            }
+
+            .school01Mobile {
+              display: none;
+
+              @media (max-width:414px) {
+                display: block;
+              }
+            }
+
             .title2 {
               position: absolute;
               z-index: 100;
@@ -425,6 +516,13 @@ body {
               font-size: 2rem;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                left: 70px;
+                font-size: 1.7rem;
+
+              }
+
             }
 
             .subtitle2 {
@@ -435,35 +533,76 @@ body {
               font-size: 1.2rem;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                left: 34px;
+                font-size: 1rem;
+
+              }
+
             }
 
             // Swiper Page3
-            .title3 {
-              position: absolute;
-              height: 308px;
-              z-index: 100;
-              bottom: 150px;
-              right: 30px;
-              font-size: 2.5rem;
-              letter-spacing: 42px;
-              font-family: "Sawarabi Mincho", sans-serif;
-              color: white;
-              writing-mode: vertical-rl;
+            .school02 {
+
+              @media (max-width:414px) {
+                display: none;
+
+              }
             }
 
-            .subtitle3 {
-              position: absolute;
-              line-height: 1.5;
-              height: 270px;
-              z-index: 100;
-              bottom: 140px;
-              right: 83px;
-              font-size: 1.3rem;
-              letter-spacing: 2px;
-              font-family: "Sawarabi Mincho", sans-serif;
-              color: white;
-              writing-mode: vertical-rl;
+            .school02Mobile {
+              display: none;
+
+              @media (max-width:414px) {
+                display: block;
+              }
             }
+
+            .content3 {
+              box-sizing: border-box;
+              top: -54px;
+              left: 0px;
+              z-index: 100;
+              writing-mode: vertical-rl;
+
+              .title3 {
+                position: absolute;
+                height: 280px;
+                z-index: 100;
+                bottom: 150px;
+                right: 30px;
+                color: white;
+                font-family: "Noto Serif JP", serif;
+                font-size: 3.3rem;
+                line-height: 1.4;
+                font-weight: 700;
+
+                @media (max-width:414px) {
+                  right: 5px;
+
+                }
+              }
+
+              .subtitle3 {
+                position: absolute;
+                line-height: 1.5;
+                height: 240px;
+                z-index: 100;
+                bottom: 140px;
+                right: 93px;
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+                font-family: "Noto Serif JP", serif;
+                color: white;
+
+                @media (max-width:414px) {
+                  right: 68px;
+
+                }
+              }
+            }
+
 
             .text3 {
               position: absolute;
@@ -474,9 +613,31 @@ body {
               font-size: 0.9rem;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                width: 320px;
+                left: 10px;
+
+              }
             }
 
             // Swiper Page4
+            .school04 {
+
+              @media (max-width:414px) {
+                display: none;
+
+              }
+            }
+
+            .school04Mobile {
+              display: none;
+
+              @media (max-width:414px) {
+                display: block;
+              }
+            }
+
             .title4 {
               position: absolute;
               z-index: 100;
@@ -485,6 +646,13 @@ body {
               font-size: 3rem;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                font-size: 3rem;
+                left: 5px;
+                bottom: 170px;
+
+              }
             }
 
             .text4 {
@@ -496,6 +664,13 @@ body {
               left: 20px;
               font-family: "Harenosora";
               color: white;
+
+              @media (max-width:414px) {
+                font-size: 0.9rem;
+                left: 10px;
+                width: 320px;
+                bottom: -10px;
+              }
             }
           }
         }
@@ -509,6 +684,10 @@ body {
       @media (max-width: 768px) {
         display: flex;
         justify-content: center;
+      }
+
+      @media (max-width:414px) {
+        margin-top: 40px;
       }
 
       .newsText {
@@ -537,11 +716,20 @@ body {
       margin-top: 10px;
       padding-left: 65px;
 
-
-
       @media (max-width: 768px) {
         margin-top: 200px;
         margin-bottom: 0px;
+      }
+
+      @media (max-width:414px) {
+        margin-top: 150px;
+      }
+
+      .blog-slider__wrp {
+
+        @media (max-width:414px) {
+          right: 18px;
+        }
       }
     }
 
@@ -567,14 +755,29 @@ body {
         font-family: "GenEiKoburiMin6-R";
         font-size: 0.9rem;
 
+        @media (max-width:414px) {
+          padding-left: 0px;
+          font-size: 0.8rem;
+
+        }
+
 
         .questionTitle {
           max-width: 20%;
           font-weight: bold;
+
+          @media (max-width:414px) {
+            max-width: 50%;
+          }
         }
 
         .questionText {
           padding-right: 0px;
+
+          @media (max-width:414px) {
+            padding-left: 0px;
+
+          }
         }
       }
 
@@ -586,14 +789,29 @@ body {
         font-family: "GenEiKoburiMin6-R";
         font-size: 0.9rem;
 
+        @media (max-width:414px) {
+          padding-left: 0px;
+          font-size: 0.8rem;
+
+        }
 
         .addressTitle {
           max-width: 20%;
           font-weight: bold;
+
+          @media (max-width:414px) {
+            max-width: 32%;
+            padding-left: 11px;
+          }
         }
 
         .addressText {
           padding-left: 6px;
+
+          @media (max-width:414px) {
+            padding-left: 0px;
+
+          }
         }
       }
 
@@ -605,14 +823,30 @@ body {
         font-family: "GenEiKoburiMin6-R";
         font-size: 0.9rem;
 
+        @media (max-width:414px) {
+          padding-left: 0px;
+          font-size: 0.8rem;
+          margin-top: 8px;
+
+        }
+
         .gotoTitle {
           max-width: 20%;
           font-weight: bold;
+
+          @media (max-width:414px) {
+            max-width: 25%;
+          }
         }
 
         .gotoText {
           padding-right: 0px;
           padding-left: 20px;
+
+          @media (max-width:414px) {
+            padding-left: 30px;
+
+          }
         }
       }
     }

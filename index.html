@@ -226,7 +226,8 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./img/school03.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school03" src="./img/school03.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school03Mobile" src="./img/school03Mobile.jpg" alt="" style="width:100%; height:450px">
                                 <div class="title1" data-swiper-parallax="-300">優秀な人材を確保するなら</div>
                                 <div class="subtitle1" data-swiper-parallax="-200">環境の整備も重要</div>
                                 <div class="text1" data-swiper-parallax="-100">
@@ -234,31 +235,27 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/school01-2.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school01" src="./img/school01-2.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school01Mobile" src="./img/school01Mobile.jpg" alt="" style="width:100%; height:450px">
                                 <div class="title2" data-swiper-parallax="-300">花や木々に囲まれ、</div>
                                 <div class="subtitle2" data-swiper-parallax="-200">鳥のさえずりが聞こえる自然豊かな環境</div>
-                                <!-- <div class="text" data-swiper-parallax="-100">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
-                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
-                                        porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac
-                                        laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                                        ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-                                        libero. Aenean feugiat non eros quis feugiat.</p>
-                                </div> -->
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/school02.jpg" alt="" style="width:100%; height:450px">
-                                <div class="title3" data-swiper-parallax="-300">木を</div>
-                                <div class="subtitle3" data-swiper-parallax="-200">ふんだんに使&nbsp った校舎</div>
+                                <img class="school02" src="./img/school02.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school02Mobile" src="./img/school02Mobile.jpg" alt="" style="width:100%; height:450px">
+                                <div class="content3">
+                                    <div class="title3" data-swiper-parallax="-300">木を</div>
+                                <div class="subtitle3" data-swiper-parallax="-200">ふんだんに使った校舎</div>
+                                </div>
                                 <div class="text3" data-swiper-parallax="-100">
                                     <p>校舎に一歩入ると「懐かしい」感じを受けるでしょう。それは鉄筋の建物ながら、廊下や階段から扉や壁まで内装に「木」を使っているから。木の持つ温もり、手触りや優しさは、生徒の気持ちにまで浸透するものです。
                                     </p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/school04.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school04" src="./img/school04.jpg" alt="" style="width:100%; height:450px">
+                                <img class="school04Mobile" src="./img/school04Mobile.jpg" alt="" style="width:100%; height:450px">
                                 <div class="title4" data-swiper-parallax="-300">卒業後の進路</div>
-                                <!-- <div class="subtitle4" data-swiper-parallax="-200">Subtitle</div> -->
                                 <div class="text4" data-swiper-parallax="-100">
                                     <p>一人ひとりの学生が、将来への目的意識を明確に持つため、１年次から基礎ゼミナールなどの授業を通じて、専門分野への関心を高めるとともに、職業観を養い、卒業後の職業に対する動機付けを行います。
                                         さらに、それぞれの学部・学科のカリキュラムの中で、自分の個性を理解した上で主体的に進路を選択できるような能力・態度を育成する教育を行います。</p>
@@ -339,8 +336,8 @@
                         <div class="questionText col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">TEL.0960-900-916（受付時間 9:00～17:00）</div>
                     </div>
                     <div class="address row">
-                        <div class="addressTitle col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">〒XXX-XXXX</div>
-                        <div class="addressText col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">台中市南區興大路145號</div>
+                        <div class="addressTitle col-xl-6 col-lg-6 col-md-6 col-sm-6 col-5">〒XXX-XXXX</div>
+                        <div class="addressText col-xl-6 col-lg-6 col-md-6 col-sm-6 col-7">台中市南區興大路145號</div>
                     </div>
                     <div class="goto row">
                         <div class="gotoTitle col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">交通手段</div>
@@ -380,10 +377,10 @@
             speed: 600,
             parallax: true,
             loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: false,
+            // },
             speed: 2200,
             pagination: {
                 el: '.swiper-pagination',

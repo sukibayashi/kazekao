@@ -4931,10 +4931,22 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .movie .topTitle .topTitle_01 .topTitle_01_inner {
+    font-size: 2.3rem;
+  }
+}
+
 .container .mainRight .movie .topTitle .topTitle_02 {
   font-family: "Noto Serif JP", serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 2.1;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .movie .topTitle .topTitle_02 {
+    font-size: 0.4rem;
+  }
 }
 
 .container .mainRight .movie .titleImg {
@@ -4952,6 +4964,12 @@ body {
   margin-bottom: 70px;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .about {
+    margin-bottom: 10px;
+  }
+}
+
 .container .mainRight .about .aboutTitle {
   text-align: center;
   font-family: "Sawarabi Mincho", sans-serif;
@@ -4959,6 +4977,13 @@ body {
 
 .container .mainRight .about .aboutTitle h2 {
   font-weight: 700;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .aboutMain .aboutImage {
+    padding-left: 0px;
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -4973,12 +4998,30 @@ body {
   width: 150px;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_01 .aboutImage_01_01img {
+    width: 100px;
+  }
+}
+
 .container .mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_02 .aboutImage_01_02img {
   width: 150px;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_02 .aboutImage_01_02img {
+    width: 100px;
+  }
+}
+
 .container .mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_03 .aboutImage_01_03img {
   width: 150px;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .aboutMain .aboutImage .aboutImage_01 .aboutImage_01_03 .aboutImage_01_03img {
+    width: 100px;
+  }
 }
 
 .container .mainRight .aboutMain .aboutContent {
@@ -4995,6 +5038,13 @@ body {
   .container .mainRight .aboutMain .aboutContent {
     margin-top: 50px;
     padding-left: 145px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .aboutMain .aboutContent {
+    margin-top: 15px;
+    padding-left: 65px;
   }
 }
 
@@ -5021,6 +5071,12 @@ body {
   margin-top: 70px;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .photos {
+    margin-top: 20px;
+  }
+}
+
 .container .mainRight .photos .photosTitle {
   text-align: center;
 }
@@ -5039,6 +5095,22 @@ body {
   width: 100%;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school03 {
+    display: none;
+  }
+}
+
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school03Mobile {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school03Mobile {
+    display: block;
+  }
+}
+
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title1 {
   position: absolute;
   z-index: 100;
@@ -5047,6 +5119,13 @@ body {
   font-size: 3rem;
   font-family: "Harenosora";
   color: white;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title1 {
+    font-size: 1.75rem;
+    left: 5px;
+  }
 }
 
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle1 {
@@ -5059,6 +5138,13 @@ body {
   color: white;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle1 {
+    font-size: 1.75rem;
+    left: 5px;
+  }
+}
+
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text1 {
   position: absolute;
   width: 300px;
@@ -5067,6 +5153,30 @@ body {
   left: 20px;
   font-family: "Harenosora";
   color: white;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text1 {
+    font-size: 0.9rem;
+    left: 7px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school01 {
+    display: none;
+  }
+}
+
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school01Mobile {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school01Mobile {
+    display: block;
+  }
 }
 
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title2 {
@@ -5079,6 +5189,13 @@ body {
   color: white;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title2 {
+    left: 70px;
+    font-size: 1.7rem;
+  }
+}
+
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle2 {
   position: absolute;
   z-index: 100;
@@ -5089,35 +5206,76 @@ body {
   color: white;
 }
 
-.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title3 {
-  position: absolute;
-  height: 308px;
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle2 {
+    left: 34px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school02 {
+    display: none;
+  }
+}
+
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school02Mobile {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school02Mobile {
+    display: block;
+  }
+}
+
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .content3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: -54px;
+  left: 0px;
   z-index: 100;
-  bottom: 150px;
-  right: 30px;
-  font-size: 2.5rem;
-  letter-spacing: 42px;
-  font-family: "Sawarabi Mincho", sans-serif;
-  color: white;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
 }
 
-.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .subtitle3 {
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .content3 .title3 {
+  position: absolute;
+  height: 280px;
+  z-index: 100;
+  bottom: 150px;
+  right: 30px;
+  color: white;
+  font-family: "Noto Serif JP", serif;
+  font-size: 3.3rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .content3 .title3 {
+    right: 5px;
+  }
+}
+
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .content3 .subtitle3 {
   position: absolute;
   line-height: 1.5;
-  height: 270px;
+  height: 240px;
   z-index: 100;
   bottom: 140px;
-  right: 83px;
+  right: 93px;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  font-family: "Sawarabi Mincho", sans-serif;
+  font-family: "Noto Serif JP", serif;
   color: white;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .content3 .subtitle3 {
+    right: 68px;
+  }
 }
 
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text3 {
@@ -5131,6 +5289,29 @@ body {
   color: white;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text3 {
+    width: 320px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school04 {
+    display: none;
+  }
+}
+
+.container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school04Mobile {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .school04Mobile {
+    display: block;
+  }
+}
+
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title4 {
   position: absolute;
   z-index: 100;
@@ -5139,6 +5320,14 @@ body {
   font-size: 3rem;
   font-family: "Harenosora";
   color: white;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .title4 {
+    font-size: 3rem;
+    left: 5px;
+    bottom: 170px;
+  }
 }
 
 .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text4 {
@@ -5150,6 +5339,15 @@ body {
   left: 20px;
   font-family: "Harenosora";
   color: white;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .photos .swiper-container .swiper-wrapper .swiper-slide .text4 {
+    font-size: 0.9rem;
+    left: 10px;
+    width: 320px;
+    bottom: -10px;
+  }
 }
 
 .container .mainRight .newsTitle {
@@ -5165,6 +5363,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .newsTitle {
+    margin-top: 40px;
   }
 }
 
@@ -5205,6 +5409,18 @@ body {
   }
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .blog-slider {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .blog-slider .blog-slider__wrp {
+    right: 18px;
+  }
+}
+
 .container .mainRight .qna .qnaTitle_Flex .qnaTitle {
   text-align: center;
   font-size: 1.4rem;
@@ -5225,13 +5441,32 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .qna .question {
+    padding-left: 0px;
+    font-size: 0.8rem;
+  }
+}
+
 .container .mainRight .qna .question .questionTitle {
   max-width: 20%;
   font-weight: bold;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .qna .question .questionTitle {
+    max-width: 50%;
+  }
+}
+
 .container .mainRight .qna .question .questionText {
   padding-right: 0px;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .qna .question .questionText {
+    padding-left: 0px;
+  }
 }
 
 .container .mainRight .qna .address {
@@ -5245,13 +5480,33 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .qna .address {
+    padding-left: 0px;
+    font-size: 0.8rem;
+  }
+}
+
 .container .mainRight .qna .address .addressTitle {
   max-width: 20%;
   font-weight: bold;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .qna .address .addressTitle {
+    max-width: 32%;
+    padding-left: 11px;
+  }
+}
+
 .container .mainRight .qna .address .addressText {
   padding-left: 6px;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .qna .address .addressText {
+    padding-left: 0px;
+  }
 }
 
 .container .mainRight .qna .goto {
@@ -5265,13 +5520,33 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .qna .goto {
+    padding-left: 0px;
+    font-size: 0.8rem;
+    margin-top: 8px;
+  }
+}
+
 .container .mainRight .qna .goto .gotoTitle {
   max-width: 20%;
   font-weight: bold;
 }
 
+@media (max-width: 414px) {
+  .container .mainRight .qna .goto .gotoTitle {
+    max-width: 25%;
+  }
+}
+
 .container .mainRight .qna .goto .gotoText {
   padding-right: 0px;
   padding-left: 20px;
+}
+
+@media (max-width: 414px) {
+  .container .mainRight .qna .goto .gotoText {
+    padding-left: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
